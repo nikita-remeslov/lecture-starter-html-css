@@ -307,3 +307,13 @@ Add Advanced or Rockstar quests to raise your mark.
    that is completely original — your content, your layout, your CSS. No
    constraints on what it contains. Evaluated on creative use of CSS,
    visual quality, and originality.
+
+---
+
+## Native HTML Bonus
+
+Using native HTML elements correctly earns extra credit.
+The following are rewarded when present and used correctly:
+
+- `<figure>` / `<figcaption>` — wrapping gallery images with captions
+- `<picture>` — providing multiple image formats or resolutions
