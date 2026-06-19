@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding-top: var(--header-height);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--header-height);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__container {
+  width: min(
+    calc(100% - (var(--gutter) * 2)),
+    var(--wrapper-max)
+  );
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-l);
+}
+
+.logo {
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 0.8rem + 0.8vw, 1.5rem);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: none;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+  list-style: none;
+}
+
+.menu__link {
+  position: relative;
+  padding-block: var(--space-xs);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu__link::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: currentColor;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 200ms ease;
+}
+
+.menu__link:hover::after,
+.menu__link:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.logo:focus-visible,
+.menu__link:focus-visible,
+.menu__button:focus-visible {
+  outline: 2px solid var(--color-border-bold);
+  outline-offset: var(--space-xs);
+}
+
+.menu__link--cta {
+  padding: var(--space-s) var(--space-l);
+  background-color: var(--color-cta);
+  color: var(--color-primary-light);
+}
+
+.menu__button {
+  padding: var(--space-xs);
+  display: grid;
+  gap: calc(var(--space-xs) / 2);
+  background-color: transparent;
+  color: var(--color-text);
+  border: none;
+}
+
+.menu__button span {
+  width: 1.25rem;
+  height: 2px;
+  display: block;
+  background-color: currentColor;
+}
+
+@media (min-width: 64rem) {
+  .menu {
+    display: block;
+  }
+
+  .menu__button {
+    display: none;
+  }
+}
