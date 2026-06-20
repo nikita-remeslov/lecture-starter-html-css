@@ -19,10 +19,8 @@
 </head>
 
 <body id="top">
-
-
     <header class="header">
-        <div class="header__container">
+        <div class="container header__container">
             <a class="logo" href="#top" aria-label="Binary Academy of Rock — Home">
                 Binary Academy of Rock
             </a>
@@ -54,7 +52,441 @@
             </button>
         </div>
     </header>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title" id="hero-title">
+                        The school for developers who shred.
+                    </h1>
 
+                    <p class="hero__tagline">
+                        Binary Academy of Rock combines a full software engineering
+                        curriculum with professional music training. Graduate with a
+                        shipped product and a live performance — in the same week.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="hero__button hero__button--primary" href="#join">
+                            Join the Band
+                        </a>
+
+                        <a class="hero__button hero__button--secondary" href="#alumni">
+                            Watch Us Play
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="hero__image">
+                    <img src="./assets/img/ab99b20227f3b18848fc92a236b67350.jpg"
+                        alt="A cat playing an electric guitar on stage" width="1076" height="1546"
+                        fetchpriority="high">
+                </figure>
+            </div>
+        </section>
+        <section class="stats" aria-label="Academy statistics">
+            <div class="container stats__container">
+                <article class="stat__item">
+                    <p class="stat__item-title">Students</p>
+                    <span class="stat__item-icon" aria-hidden="true">🎓</span>
+                    <p class="stat__item-value">1,200+</p>
+                </article>
+
+                <article class="stat__item">
+                    <p class="stat__item-title">Bands Formed</p>
+                    <span class="stat__item-icon" aria-hidden="true">🎸</span>
+                    <p class="stat__item-value">87</p>
+                </article>
+
+                <article class="stat__item">
+                    <p class="stat__item-title">Projects Shipped</p>
+                    <span class="stat__item-icon" aria-hidden="true">🚀</span>
+                    <p class="stat__item-value">340</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="courses" id="courses" aria-labelledby="courses-title">
+            <div class="container">
+                <h2 class="section-title courses__title" id="courses-title">
+                    Pick your discipline
+                </h2>
+
+                <p class="courses__subtitle">
+                    Every course runs in parallel — half the week you code,
+                    half the week you play.
+                </p>
+
+                <div class="courses__grid">
+                    <div class="course-wrapper">
+                        <article class="course">
+                            <img class="course__image"
+                                src="./assets/img/86b0fe01cbbe5bc7839a346c0df437b6.jpg"
+                                alt="Musician playing an electric guitar on stage" width="402" height="612" loading="lazy">
+
+                            <div class="course__content">
+                                <span class="course__badge" data-track="foundation">
+                                    Foundation
+                                </span>
+
+                                <h3 class="course__title">
+                                    Electric Guitar &amp; Algorithms
+                                </h3>
+
+                                <p class="course__description">
+                                    Learn to shred solos and sort arrays. Write your first
+                                    recursive function and play your first power chord on the same day.
+                                </p>
+
+                                <a class="course__link" href="#join"
+                                    aria-label="Apply for Electric Guitar and Algorithms">Read more</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="course-wrapper">
+                        <article class="course">
+                            <img class="course__image"
+                                src="./assets/img/ad36adca2a63b95ebaec55be5ffb2079.jpg"
+                                alt="Rock-styled portrait of the Mona Lisa" width="540" height="748" loading="lazy">
+
+                            <div class="course__content">
+                                <span class="course__badge" data-track="intermediate">
+                                    Intermediate
+                                </span>
+
+                                <h3 class="course__title">
+                                    Drums &amp; Data Structures
+                                </h3>
+
+                                <p class="course__description">
+                                    Rhythm is a pattern. Pattern is structure. Master
+                                    polyrhythms and binary trees — they're more similar than you think.
+                                </p>
+
+                                <a class="course__link" href="#join"
+                                    aria-label="Apply for Drums and Data Structures">Read more</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="course-wrapper">
+                        <article class="course">
+                            <img class="course__image" src="./assets/img/3924deb0b982681fd168b66f9326781f.jpg"
+                                alt="Bass guitarist performing under colorful lights" width="735" height="976" loading="lazy">
+
+                            <div class="course__content">
+                                <span class="course__badge" data-track="intermediate">
+                                    Intermediate
+                                </span>
+
+                                <h3 class="course__title">
+                                    Bass &amp; Backend
+                                </h3>
+
+                                <p class="course__description">
+                                    Bass players hold everything together. So does good backend
+                                    code. Build APIs and basslines that never drop the beat.
+                                </p>
+
+                                <a class="course__link" href="#join"
+                                    aria-label="Apply for Bass and Backend">Read more</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="course-wrapper">
+                        <article class="course">
+                            <img class="course__image" src="./assets/img/8bd2c378e6433c8310a6429bcae85633.jpg"
+                                alt="Illustration of Batman singing into a microphone" width="600" height="850" loading="lazy">
+
+                            <div class="course__content">
+                                <span class="course__badge" data-track="advanced">
+                                    Advanced
+                                </span>
+
+                                <h3 class="course__title">
+                                    Vocals &amp; Version Control
+                                </h3>
+
+                                <p class="course__description">
+                                    Your voice is your commit message — make it count. Learn to perform
+                                    on stage and collaborate without losing your mind.
+                                </p>
+
+                                <a class="course__link" href="#join"
+                                    aria-label="Apply for Vocals and Version Control">Read more</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule" id="schedule" aria-labelledby="schedule-title">
+            <div class="container">
+                <h2 class="section-title schedule__title" id="schedule-title">
+                    Lecture Schedule
+                </h2>
+
+                <ol class="schedule__list">
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-06-17">Jun 17</time>
+                        <span class="schedule__num">01</span>
+                        <span class="schedule__title-text">Riff Sprint</span>
+                        <span class="schedule__type" data-type="music">Music</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-06-21">Jun 21</time>
+                        <span class="schedule__num">02</span>
+                        <span class="schedule__title-text">Debug Jam</span>
+                        <span class="schedule__type" data-type="code">Code</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-06-25">Jun 25</time>
+                        <span class="schedule__num">03</span>
+                        <span class="schedule__title-text">Acoustic Algorithms</span>
+                        <span class="schedule__type" data-type="music">Music</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-06-29">Jun 29</time>
+                        <span class="schedule__num">04</span>
+                        <span class="schedule__title-text">Bass Drop Bootcamp</span>
+                        <span class="schedule__type" data-type="music">Music</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-07-03">Jul 3</time>
+                        <span class="schedule__num">05</span>
+                        <span class="schedule__title-text">API &amp; Amplifier Workshop</span>
+                        <span class="schedule__type" data-type="code">Code</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-07-07">Jul 7</time>
+                        <span class="schedule__num">06</span>
+                        <span class="schedule__title-text">Open Mic + Open Source</span>
+                        <span class="schedule__type" data-type="code">Code</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-07-11">Jul 11</time>
+                        <span class="schedule__num">07</span>
+                        <span class="schedule__title-text">Backstage Wiring</span>
+                        <span class="schedule__type" data-type="code">Code</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-07-15">Jul 15</time>
+                        <span class="schedule__num">08</span>
+                        <span class="schedule__title-text">Silent Shredder</span>
+                        <span class="schedule__type" data-type="music">Music</span>
+                    </li>
+
+                    <li class="schedule__item">
+                        <time class="schedule__date" datetime="2026-07-19">Jul 19</time>
+                        <span class="schedule__num">09</span>
+                        <span class="schedule__title-text">Reactive Road Tour: Advanced</span>
+                        <span class="schedule__type" data-type="music">Music</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="canvas" id="canvas" aria-labelledby="canvas-title">
+            <div class="container canvas__container">
+                <figure class="canvas__media">
+                    <img class="canvas__image" src="./assets/img/career-discipline.png"
+                        alt="A guitarist reviewing work on a laptop during a rehearsal" width="1672" height="941"
+                        loading="lazy">
+                </figure>
+
+                <div class="canvas__content">
+                    <p class="canvas__eyebrow">From practice to profession</p>
+
+                    <h2 class="section-title canvas__title" id="canvas-title">
+                        Hard work gets hired.
+                    </h2>
+
+                    <p class="canvas__text">
+                        Show up. Learn deeply. Build work you are proud of. The people who stay
+                        curious and put in the hours leave with more than knowledge — they leave
+                        with skills worth hiring.
+                    </p>
+
+                    <ol class="canvas__path" aria-label="The path from learning to employment">
+                        <li class="canvas__step">
+                            <span class="canvas__step-num">01</span>
+                            <span class="canvas__step-text">Study hard</span>
+                        </li>
+                        <li class="canvas__step">
+                            <span class="canvas__step-num">02</span>
+                            <span class="canvas__step-text">Build real work</span>
+                        </li>
+                        <li class="canvas__step">
+                            <span class="canvas__step-num">03</span>
+                            <span class="canvas__step-text">Earn your place</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="alumni" id="alumni" aria-labelledby="alumni-title">
+            <div class="container">
+                <h2 class="section-title alumni__title" id="alumni-title">Alumni Shreds</h2>
+
+                <div class="alumni__track">
+                    <article class="alumni__slide" id="alumni-slide-1">
+                        <figure class="alumni__portrait">
+                            <img class="alumni__image" src="./assets/img/7d1fa43d6c3e9795ca8445a625d5ced3.jpg"
+                                alt="Portrait of Mick Jagger" width="447" height="560" loading="lazy">
+                        </figure>
+                        <div class="alumni__content">
+                            <blockquote class="alumni__quote">
+                                “I came in as a junior dev who couldn’t tune a guitar. I left as a senior engineer who
+                                played their first gig at graduation. Best six months of my life.”
+                            </blockquote>
+                            <p class="alumni__name">Mick Jagger</p>
+                            <p class="alumni__cohort">Previous Year Class</p>
+                        </div>
+                    </article>
+
+                    <article class="alumni__slide" id="alumni-slide-2">
+                        <figure class="alumni__portrait">
+                            <img class="alumni__image" src="./assets/img/6ef8f82220bdc9fdeffcded0200e5917.jpg"
+                                alt="Portrait of Thom Yorke" width="960" height="1480" loading="lazy">
+                        </figure>
+                        <div class="alumni__content">
+                            <blockquote class="alumni__quote">
+                                “I thought the coding and music tracks would compete for my attention. Instead they feed
+                                each other. My solos have structure. My code has rhythm.”
+                            </blockquote>
+                            <p class="alumni__name">Thom Yorke</p>
+                            <p class="alumni__cohort">Previous Year Class</p>
+                        </div>
+                    </article>
+
+                    <article class="alumni__slide" id="alumni-slide-3">
+                        <figure class="alumni__portrait">
+                            <img class="alumni__image" src="./assets/img/7bfd2760bea5e4f97ed9f954dd4fa2cf.jpg"
+                                alt="Portrait of Bob Dylan" width="625" height="760" loading="lazy">
+                        </figure>
+                        <div class="alumni__content">
+                            <blockquote class="alumni__quote">
+                                “The bands you form here become your engineering team. We graduated, started a company,
+                                and still practice on Thursdays.”
+                            </blockquote>
+                            <p class="alumni__name">Bob Dylan</p>
+                            <p class="alumni__cohort">Previous Year Class</p>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="alumni__dots" aria-label="Choose an alumni story">
+                    <a class="alumni__dot" href="#alumni-slide-1" aria-label="Show Mick Jagger story"></a>
+                    <a class="alumni__dot" href="#alumni-slide-2" aria-label="Show Thom Yorke story"></a>
+                    <a class="alumni__dot" href="#alumni-slide-3" aria-label="Show Bob Dylan story"></a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 class="section-title faq__title" id="faq-title">Got Questions?</h2>
+
+                <div class="faq__list">
+                    <details class="faq__item">
+                        <summary class="faq__question">Do I need any prior coding experience?</summary>
+                        <p class="faq__answer">No. We start from zero on both tracks. If you can count to four
+                            (musically speaking), you can learn to write a for loop.</p>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">Do I need to own an instrument?</summary>
+                        <p class="faq__answer">All instruments are available in our studio spaces. Once you know what
+                            you want to play, we’ll help you find the right gear at the right price.</p>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">How long is the programme?</summary>
+                        <p class="faq__answer">The core curriculum is 6 months, full-time. We also offer a 12-month
+                            part-time track for working professionals. Both lead to the same capstone: a shipped project
+                            and a live performance.</p>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">What happens at the graduation concert?</summary>
+                        <p class="faq__answer">You play a 20-minute set with your band and demo your final project to
+                            an audience of hiring managers and music industry contacts.</p>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">Is the curriculum remote-friendly?</summary>
+                        <p class="faq__answer">The coding track is fully remote. The music track requires in-person
+                            attendance at least twice a week — you can’t rehearse through a screen. We have studios in
+                            Lviv, Kyiv, Kharkiv, and Odessa.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="join" id="join" aria-labelledby="join-title">
+            <div class="container join__container">
+                <figure class="join__media">
+                    <img class="join__image" src="./assets/img/3b359f698acd440f7a6ff9b7f0deb255.png"
+                        alt="A black cat surrounded by a bold zebra pattern" width="1152" height="2048" loading="lazy">
+                </figure>
+
+                <div class="join__content">
+                    <h2 class="section-title join__title" id="join-title">Audition for the Band</h2>
+                    <p class="join__subtitle">Drop your email and we’ll send you everything you need to apply for the
+                        Fall 2026 cohort.</p>
+
+                    <form class="join__form" action="#join" method="get">
+                        <label class="visually-hidden" for="join-email">Email address</label>
+                        <input class="join__email" id="join-email" name="email" type="email"
+                            placeholder="you@email.com" autocomplete="email" required>
+                        <button class="join__button" type="submit">Join the Band</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="social" aria-label="Social media">
+                <a class="social__link" href="https://github.com" aria-label="GitHub">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                    </svg>
+                </a>
+                <a class="social__link" href="https://youtube.com" aria-label="YouTube">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M21.58 7.19a2.75 2.75 0 0 0-1.94-1.95C17.93 4.78 12 4.78 12 4.78s-5.93 0-7.64.46a2.75 2.75 0 0 0-1.94 1.95A28.7 28.7 0 0 0 1.96 12c0 1.61.15 3.22.46 4.81a2.75 2.75 0 0 0 1.94 1.95c1.71.46 7.64.46 7.64.46s5.93 0 7.64-.46a2.75 2.75 0 0 0 1.94-1.95c.31-1.59.46-3.2.46-4.81 0-1.61-.15-3.22-.46-4.81ZM10 15.12V8.88L15.2 12 10 15.12Z" />
+                    </svg>
+                </a>
+                <a class="social__link" href="https://instagram.com" aria-label="Instagram">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.5 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+                    </svg>
+                </a>
+            </nav>
+
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <a class="footer__link" href="#courses">Courses</a>
+                <a class="footer__link" href="#schedule">Schedule</a>
+                <a class="footer__link" href="#faq">FAQ</a>
+                <a class="footer__link" href="#join">Apply</a>
+            </nav>
+
+            <p class="footer__copyright">© 2026 Binary Academy of Rock. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 
